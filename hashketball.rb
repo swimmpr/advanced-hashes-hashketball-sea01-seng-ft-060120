@@ -208,16 +208,55 @@ def big_shoe_rebounds
   return rebounds
 end
 
-# def player_helper
-#   game_hash[:home][:players].marge(game_hash)[:away][:players])
+#working from/through video
+# def players
+#   game_hash[:home][:players].merge(game_hash[:away][:players])
 # end
 
-
-# def num_points_scored(player)
-#   game_hash
+# def team team_name
+#   case team_name
+#   when game_hash[:home][:team_name]
+#     game_hash[:home]
+#   when game_hash[:away]
+#     game_hash[:away][:colors]
 # end
 
-# def num_points_scored(player)
-#   player_helper[:name][:score]
+# def num_points_scored player_name
+#   #players = game_hash[:home][:players].merge(game_hash[:away][:players])
+#   players[player_name][:points]
+# end
+
+# def shoe_size player_name
+#   players[player_name][:shoe]
+# end
+
+# def team_colors team_name
+#   team(team_name)[:colors]
+# end
+
+# def team_names
+#   [game_hash][:home][:team_name], game_hash[:away][:team_name]
+# end
+
+# def player_numbers team_name
+#   team(team_name)[:players].map{|key, value| value[:number]
+# end
+
+# def player_stats player_name
+#   players[player_name]
+# end
+
+# def big_shoe_rebounds
+#   big_shoe = 0
+#   rebounds = 0
+#   game_hash.each do | team, team_info|
+#     team_info[:players].each do | player|
+#       if player[:shoe] > big_shoe
+#         big_shoe = player[:shoe]
+#         rebounds = player[:rebounds]
+#       end
+#     end
+#   end
+#   return rebounds
 # end
 
